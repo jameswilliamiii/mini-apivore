@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
       "public gem pushes."
   end
 
-  spec.files       = ["lib/mini_apivore.rb", "data/swagger_2.0_schema.json", "data/draft04_schema.json"]
+  spec.files       = ["lib/mini_apivore.rb", "data/swagger_2.0_schema.json", "data/swagger_3.0_schema.json", "data/draft04_schema.json"]
   spec.files      += Dir["lib/mini_apivore/*.rb"]
 
   spec.bindir        = "exe"
@@ -33,7 +33,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib", "data"]
 
   spec.add_runtime_dependency("hashie", "~> 3.3")
-  spec.add_runtime_dependency("json-schema", "~> 2.5")
+  spec.add_runtime_dependency("json-schema", "~> 4.3")
   spec.add_runtime_dependency("minitest", "~> 5.0")
 
   spec.add_development_dependency("pry", "~> 0")
