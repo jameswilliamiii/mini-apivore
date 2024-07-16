@@ -25,8 +25,14 @@ Gem::Specification.new do |spec|
       "public gem pushes."
   end
 
-  spec.files       = ["lib/mini_apivore.rb", "data/swagger_2.0_schema.json", "data/swagger_3.0_schema.json", "data/draft04_schema.json"]
-  spec.files      += Dir["lib/mini_apivore/*.rb"]
+  spec.files = [
+    "lib/mini_apivore.rb",
+    "data/swagger_2.0_schema.json",
+    "data/swagger_3.0_schema.json",
+    "data/swagger_3.1_schema.json",
+    "data/draft04_schema.json",
+  ]
+  spec.files += Dir["lib/mini_apivore/*.rb"]
 
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
